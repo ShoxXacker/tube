@@ -28,9 +28,6 @@ class Config(object):
     # Authorized user ids to use this bot
     AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
 
-    # superusers to broadcast messages & fetch subscribers count
-    SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
-
     # Database URI
     DB_URI = os.environ.get("DATABASE_URL", "")
 
